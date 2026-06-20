@@ -1,8 +1,13 @@
 # Ardiuno-Assignment1
-Arduino uno countdown program using variables, functions , whiles loops and serial monitor   
+Arduino uno countdown program using variables, functions , whiles loops and serial monitor
+This my submission for assignment 1 in the programming C++ for enginnerings using ARDUINO COURSE AT GHANA COMMUNICATION TECHNOLOGY UNIVERSITY IN COMPUTER ENGINEERING GROUP B .
 For this project, I made an Arduino program that controls an LED light connected to pin 13. The idea is simple: the LED blinks in a countdown pattern, starting from 5 blinks, then going down to 4, 3, 2, and finally 1 blink, before stopping completely.
 I used a variable called startValue to store the number 5, which is where the countdown begins. In the setup() part of the code, I told the Arduino to start Serial communication (so I can see messages on my computer) and set pin 13 as an OUTPUT, since that's where the LED is connected.
 I also wrote my own function called flashLED(). This function takes a number as input and makes the LED blink that many times. I did this because instead of repeating the same blinking code over and over for each number, I can just call flashLED(5), then flashLED(4), and so on, and it handles the blinking for me. This makes the code shorter and easier to read.
 To make the countdown happen, I used a while loop that starts at startValue (5) and keeps going as long as the count is greater than or equal to 1. Every time the loop runs, it prints the current count to the Serial Monitor (like "Count: 5"), calls flashLED() to blink the LED, and then waits 1 second before moving to the next number.
 Once the loop finishes, the program prints "=== Countdown Complete ===" to let me know it's done. I made sure everything happens inside setup() only once, so loop() stays empty and the countdown doesn't repeat forever.
 For the hardware side, I connected the LED to pin 13 using a resistor to protect it from too much current, and connected the other leg of the LED to ground (GND).
+##author
+MICHAEL KAREL AGBOLOSU-AMISON -- ID 2526404868
+
+
