@@ -6,10 +6,10 @@ int ledPin = 13;
 void flashLED(int times){
 while(times>0){
   digitalWrite(ledPin,HIGH);
-  delay(500);
+  delay(200);
 
   digitalWrite(ledPin,LOW);
-  delay(500);
+  delay(200);
 times--;
   }
 }
@@ -26,7 +26,7 @@ while(startValue >= 1){
    Serial.print("Counter : ");
   Serial.println(startValue);   
 flashLED(startValue);
-delay(2000);
+delay(1000);
 startValue--;
 }
 Serial.println("====Countdown Complete ====");
